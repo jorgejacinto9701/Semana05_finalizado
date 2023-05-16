@@ -7,6 +7,6 @@ import entity.Cliente;
 public interface ClienteDAO {
 
 	public abstract int insertaCliente(Cliente obj);
-	public abstract List<Cliente> listaClientePorNombre(String filtro);
+	public abstract List<Cliente> listaCliente(String filtro);
 	
 }

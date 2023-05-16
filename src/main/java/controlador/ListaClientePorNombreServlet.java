@@ -29,7 +29,7 @@ public class ListaClientePorNombreServlet extends HttpServlet{
 		ClienteDAO dao = fabrica.getCliente();
 	
 		String filtro = req.getParameter("filtro");
-		List<Cliente> lista = dao.listaClientePorNombre(filtro + "%");
+		List<Cliente> lista = dao.listaCliente(filtro + "%");
 		
 		//2 Convertir las categorias en formato JSON
 		Gson gson = new Gson();
